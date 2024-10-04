@@ -1,0 +1,12 @@
+.title {
+  margin: 0;
+  margin-bottom: 42px;
+  font-size: 38px;
+  line-height: 120%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+    font-size: 48px;
+  }
+}

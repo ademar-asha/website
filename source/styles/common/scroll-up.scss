@@ -1,0 +1,52 @@
+.scroll-up {
+  z-index: 100;
+  position: fixed;
+  bottom: -40px;
+  right: 5vw;
+
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px 15px;
+  background-color: $white;
+  border: 1px solid $dark-bg;
+  border-radius: 50%;
+  opacity: 0.7;
+
+  transition: bottom 0.5s, border-color 0.2s, opacity 0.2s;
+  cursor: pointer;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: $dark-bg;
+    mask-image: url("../../icons/stack.svg#arrow");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: background-color 0.2s;
+  }
+
+  &--show {
+    bottom: 5vh;
+  }
+
+  &:focus-visible,
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    border-color: $green;
+
+    &::before {
+      background-color: $green;
+    }
+  }
+}

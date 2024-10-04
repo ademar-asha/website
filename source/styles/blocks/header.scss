@@ -1,5 +1,228 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  position: relative;
+  background-color: $dark-bg;
+  font-size: 20px;
+  color: $white;
+  padding: 28px 0;
+}
+
+.header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  @media (max-width: calc($desktop-width - 1px)) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $dark-bg;
+    max-height: 0;
+    transition: max-height 0.7s;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    display: block;
+    max-width: 600px;
+  }
+
+  &--active {
+    max-height: 300px;
+  }
+}
+
+.header__nav-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    flex-flow: row wrap;
+    gap: 10px;
+  }
+}
+
+.header__nav-item {
+  @media (max-width: calc($desktop-width - 1px)) {
+    position: relative;
+    width: 100%;
+    padding: 0 45px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 1px;
+      background-color: $white;
+    }
+  }
+}
+
+.header__nav-link {
+  position: relative;
+  display: block;
+  padding: 20px 10px;
+  text-align: center;
+  transition: opacity 0.2s, color 0.2s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: $white;
+    transition: width 0.2s;
+  }
+
+  &:focus-visible::before,
+  &:hover::before {
+    width: 100%;
+  }
+
+  &:focus-visible,
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    color: $green;
+  }
+}
+
+.header__contacts {
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: none;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  max-width: 260px;
+  list-style: none;
+}
+
+.header__contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.2s, color 0.2s;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    background-color: $white;
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+  }
+
+  &--phone::before {
+    mask-image: url("../../icons/stack.svg#phone");
+  }
+
+  &--mail::before {
+    mask-image: url("../../icons/stack.svg#mail");
+  }
+
+  &:focus-visible,
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    color: $green;
+  }
+}
+
+.header__button {
+  flex-shrink: 0;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  transition: opacity 0.2s;
+  cursor: pointer;
+
+  &--active .header__button-line {
+    &--top {
+      transform: rotate(-45deg);
+      top: 18px;
+    }
+
+    &--middle {
+      left: 40px;
+    }
+
+    &--bottom {
+      transform: rotate(45deg);
+      bottom: 18px;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
+
+  &:focus-visible,
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active .header__button-line {
+    background-color: $green;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__button-line {
+  position: absolute;
+  left: 5px;
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: $white;
+  transition: all cubic-bezier(0.68, -0.6, 0.32, 1.6) 0.6s, background-color 0.2s;
+
+  &--top {
+    top: 10px;
+  }
+
+  &--middle {
+    top: 18px;
+  }
+
+  &--bottom {
+    bottom: 10px;
+  }
 }

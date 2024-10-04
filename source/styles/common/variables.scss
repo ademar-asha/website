@@ -1,1 +1,18 @@
-/* здесь используйте глобальные переменные */
+// font-family
+$main-font: "Roboto Condensed", "Arial", sans-serif;
+
+// font-weight
+$regular-weight: 400;
+$bold-weight: 700;
+
+// breakpoints
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1366px;
+
+// colors
+$white: #ffffff;
+$primary-color: #102654;
+$dark-bg: #161d2b;
+$green: #007600;
+$grey: #ededed;

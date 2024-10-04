@@ -1,0 +1,86 @@
+.additional-services {
+  position: relative;
+  background-color: #e9e9e9;
+  background-image: url("../../images/around.png");
+  background-size: auto;
+  background-position: center;
+}
+
+.additional-services__container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $grey;
+  box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.5), 10px 0 10px -5px rgba(0, 0, 0, 0.5);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.additional-services__text {
+  margin-bottom: 42px;
+}
+
+.additional-services__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  gap: 42px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.additional-services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--hole {
+    &::before {
+      background-image: url("../../images/as-hole.png");
+    }
+  }
+
+  &--pipe {
+    &::before {
+      background-image: url("../../images/as-pipe.png");
+    }
+  }
+
+  &--laser {
+    &::before {
+      background-image: url("../../images/as-laser.png");
+    }
+  }
+
+  &--cut {
+    &::before {
+      background-image: url("../../images/as-cut.png");
+    }
+  }
+
+  &--wending {
+    &::before {
+      background-image: url("../../images/as-wending.png");
+    }
+  }
+
+  &--painting {
+    &::before {
+      background-image: url("../../images/as-painting.png");
+    }
+  }
+}
