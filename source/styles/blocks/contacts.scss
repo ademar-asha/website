@@ -1,7 +1,27 @@
 .contacts__container {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: $white;
+  background-color: $grey;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 100px;
@@ -28,9 +48,9 @@
     justify-content: space-between;
     max-width: 610px;
     padding: 30px;
-    background-color: $white;
+    background-color: $grey;
     border-radius: 0 10px 10px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.4);
   }
 }
 

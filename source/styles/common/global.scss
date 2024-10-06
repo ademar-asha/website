@@ -21,9 +21,9 @@ body {
   font-weight: $regular-weight;
   line-height: 22px;
   color: $primary-color;
-  background-color: $white;
-  background-image: url("../../images/background1.png");
-  background-size: cover;
+  background-color: $dark-grey;
+  background-image: url("../../images/around.png");
+  background-size: auto;
   background-position: center;
 
   @media (min-width: $tablet-width) {

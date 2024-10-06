@@ -1,7 +1,27 @@
 .order__container {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: $white;
+  background-color: $accent-grey;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 100px;
@@ -79,7 +99,7 @@
     transform: translate(-50%, 50%);
     width: 80px;
     height: 80px;
-    background-color: $white;
+    background-color: $accent-grey;
   }
 
   &::after {
