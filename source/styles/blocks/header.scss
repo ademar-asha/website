@@ -18,6 +18,9 @@
 }
 
 .header__nav {
+  font-size: 18px;
+  text-transform: uppercase;
+
   @media (max-width: calc($desktop-width - 1px)) {
     position: absolute;
     top: 100%;
