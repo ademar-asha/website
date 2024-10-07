@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: $accent-grey;
+  background-color: $grey;
 
   &::before,
   &::after {
@@ -99,7 +99,7 @@
     transform: translate(-50%, 50%);
     width: 80px;
     height: 80px;
-    background-color: $accent-grey;
+    background-color: $grey;
   }
 
   &::after {
