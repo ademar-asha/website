@@ -3,7 +3,9 @@ const links = document.querySelectorAll('a[href^="#"]');
 const linkClickHandler = (event) => {
   event.preventDefault();
 
-  const href = event.target.getAttribute('href');
+  const link = event.target.closest('a');
+  const href = link.getAttribute('href');
+
 
   if (href && href !== '#') {
     const targetId = href.substring(1);

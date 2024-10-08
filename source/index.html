@@ -69,13 +69,13 @@
               <a class="header__nav-link" href="#services">Услуги</a>
             </li>
             <li class="header__nav-item">
+              <a class="header__nav-link" href="#projects">Наши работы</a>
+            </li>
+            <li class="header__nav-item">
               <a class="header__nav-link" href="#order">Оформление заказа</a>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link" href="#contacts">Контакты</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#projects">Наши работы</a>
             </li>
           </ul>
         </nav>
@@ -104,6 +104,9 @@
             Современное производство нередко испытывает потребность в изготовлении нестандартных металлических изделий. Наша компания производит металлоизделия на заказ по выгодным ценам. Мы заинтересованы во взаимовыгодном сотрудничестве как с промышленными предприятиями, так и со строительными организациями.
           </p>
           <ul class="hero__list">
+            <li class="hero__item hero__item--turning" data-link="turning">
+              <p class="hero__item-title">Токарные и фрезерные ЧПУ работы</p>
+            </li>
             <li class="hero__item hero__item--laser" data-link="laser">
               <p class="hero__item-title">Лазерная и плазменная резка металла</p>
             </li>
@@ -112,9 +115,6 @@
             </li>
             <li class="hero__item hero__item--bend" data-link="bendling">
               <p class="hero__item-title">Гибка листа</p>
-            </li>
-            <li class="hero__item hero__item--turning" data-link="turning">
-              <p class="hero__item-title">Токарные и фрезерные ЧПУ работы</p>
             </li>
             <li class="hero__item hero__item--welding" data-link="welding">
               <p class="hero__item-title">Сварочные работы</p>
@@ -154,16 +154,33 @@
         <div class="services__container container">
           <h2 class="services__title title">Наши услуги</h2>
           <ul class="services__list">
-            <li class="services__item" data-name="laser">
+            <li class="services__item" data-name="turning">
               <div class="services__title-wrapper">
-                <h3 class="services__item-title">Лазерная резка металла</h3>
+                <h3 class="services__item-title">Токарные и фрезерные <br>ЧПУ работы</h3>
                 <button class="services__button services__button--active" type="button">
                   <span class="visually-hidden">Показать описание услуги</span>
                 </button>
               </div>
               <div class="services__description services__description--active">
-                <img class="services__img" src="./images/s-laser.jpg" width="280" height="280" alt="Резка металла">
-                <p class="services__text">Технология резки позволяет получить в результате выполнения работ максимально ровные и чистые контуры готовых деталей. Такие хорошие показатели могут осуществляться не только при прямолинейном раскрое, ведь методика подразумевает и возможность криволинейной резки металлов.</p>
+                <img class="services__img" src="./images/s-turning.jpg" width="280" height="240" alt="Раскрой листового металла">
+                <p class="services__text">
+                  Токарные и фрезерные ЧПУ работы – это высокоточная обработка металлов, требующая использования передового оборудования и глубоких знаний оператора.
+                  Компания "Адэмар" предлагает услуги по изготовлению деталей любой сложности на современных станках с ЧПУ. Мы гарантируем точность, качество и надежность обработки материалов.
+                </p>
+              </div>
+            </li>
+            <li class="services__item" data-name="laser">
+              <div class="services__title-wrapper">
+                <h3 class="services__item-title">Лазерная и плазменная <br>резка металла</h3>
+                <button class="services__button services__button--active" type="button">
+                  <span class="visually-hidden">Показать описание услуги</span>
+                </button>
+              </div>
+              <div class="services__description services__description--active">
+                <img class="services__img" src="./images/s-laser.jpg" width="280" height="240" alt="Резка металла">
+                <p class="services__text">
+                  Технология резки позволяет получить в результате выполнения работ максимально ровные и чистые контуры готовых деталей. Такие хорошие показатели могут осуществляться не только при прямолинейном раскрое, ведь методика подразумевает и возможность криволинейной резки металлов.
+                </p>
               </div>
             </li>
             <li class="services__item" data-name="holes">
@@ -174,24 +191,9 @@
                 </button>
               </div>
               <div class="services__description services__description--active">
-                <img class="services__img" src="./images/s-holes.jpg" width="280" height="280" alt="Сверление металла">
+                <img class="services__img" src="./images/s-holes.jpg" width="280" height="240" alt="Сверление металла">
                 <p class="services__text">Сверление отверстия выполняется на профессиональных станках.</p>
                 <p class="services__text">Максимальный диаметр отверстий – 30мм, толщина обрабатываемого металла – 20мм.</p>
-              </div>
-            </li>
-            <li class="services__item" data-name="cutting">
-              <div class="services__title-wrapper">
-                <h3 class="services__item-title">Плазменная резка металла</h3>
-                <button class="services__button services__button--active" type="button">
-                  <span class="visually-hidden">Показать описание услуги</span>
-                </button>
-              </div>
-              <div class="services__description services__description--active">
-                <img class="services__img" src="./images/s-cutting.jpg" width="280" height="280" alt="Раскрой листового металла">
-                <p class="services__text">
-                  Плазменная резка – один из самых сложных видов обработки металлов. Для реализации этих услуг требуется современное высокотехнологичное оборудование,
-                  а также профессионализм и опыт оператора. Компания "Адэмар" предлагает услуги по плазменному раскрою стальных и алюминиевых листов и плин на станках с ЧПУ.
-                </p>
               </div>
             </li>
             <li class="services__item" data-name="bendling">
@@ -202,7 +204,7 @@
                 </button>
               </div>
               <div class="services__description">
-                <img class="services__img" src="./images/s-bending.jpg" width="280" height="280" alt="Гибка металла">
+                <img class="services__img" src="./images/s-bending.jpg" width="280" height="240" alt="Гибка металла">
                 <p class="services__text">Чтобы выполнить работу по заданным параметрам, нужно сделать правильные расчеты, точно знать, какой результат будет получен при использовании тех или иных комплектующих. Специалисты нашей компании осуществляют гибку листового металла на заказ в минимальные сроки.</p>
               </div>
             </li>
@@ -214,7 +216,7 @@
                 </button>
               </div>
               <div class="services__description">
-                <img class="services__img" src="./images/s-welding.jpg" width="280" height="280" alt="Сварка металла">
+                <img class="services__img" src="./images/s-welding.jpg" width="280" height="240" alt="Сварка металла">
                 <p class="services__text">Наша компания производит сварочные работы с 2009 года — за это время нами накоплен огромный опыт, который позволяет обеспечивать высочайшее качество услуг при доступной стоимости работ. Также мы значительно расширили материально-техническую базу предприятия и освоили большинство технологий термического соединения материалов.</p>
               </div>
             </li>
@@ -226,7 +228,7 @@
                 </button>
               </div>
               <div class="services__description">
-                <img class="services__img" src="./images/s-painting.jpg" width="280" height="280" alt="Покраска металла">
+                <img class="services__img" src="./images/s-painting.jpg" width="280" height="240" alt="Покраска металла">
                 <p class="services__text">Компания «Адэмар» недорого предоставит услугу порошковой покраски металлических изделий. Возможно создание различной продукции на заказ — фирма обладает оборудованием для нарезки, сгибания, сверления металлов. Кроме услуги порошковой покраски, мы также предоставим дополнительные сервисы: доставку товара до склада, консультации экспертов и пр.</p>
               </div>
             </li>
@@ -238,7 +240,7 @@
                 </button>
               </div>
               <div class="services__description">
-                <img class="services__img" src="./images/s-processing.jpg" width="280" height="280" alt="Обработка металла">
+                <img class="services__img" src="./images/s-processing.jpg" width="280" height="240" alt="Обработка металла">
                 <p class="services__text">Компания «Адэмар» оказывает услугу на оптимальных условиях и по приемлемым ценам.</p>
                 <p class="services__text">Мы выполняем на заказ металлообработку по опытным образцам, эскизам или чертежам заказчика.</p>
               </div>
@@ -251,7 +253,7 @@
                 </button>
               </div>
               <div class="services__description">
-                <img class="services__img" src="./images/s-shop.jpg" width="280" height="280" alt="Производственный цех">
+                <img class="services__img" src="./images/s-shop.jpg" width="280" height="240" alt="Производственный цех">
                 <p class="services__text">Участникам тендеров наша компания предлагает изготовление продукции из металла под ключ, а так же выполнение отдельных операций с металлическими заготовками.</p>
               </div>
             </li>
@@ -263,7 +265,7 @@
                 </button>
               </div>
               <div class="services__description">
-                <img class="services__img" src="./images/s-import.jpg" width="280" height="280" alt="Изготовление металлической детали">
+                <img class="services__img" src="./images/s-import.jpg" width="280" height="240" alt="Изготовление металлической детали">
                 <p class="services__text">Компания «Адэмар» оказывает услуги по металлообработке на исключительно выгодных для заказчиков условиях.</p>
               </div>
             </li>
@@ -288,29 +290,35 @@
         <div class="projects__container container">
           <h2 class="projects__title title">Наши работы</h2>
           <ul class="projects__list">
-            <li class="projects__item" data-link="turning">
-              <img class="projects__img" src="./images/det2.jpg" width="240" height="240" alt="Пример выполненной работы">
-              <!-- <h3 class="projects__item-title">Название услуги</h3> -->
+            <li class="projects__item">
+              <a class="projects__link" href="#services">
+                <img class="projects__img" src="./images/det2.jpg" width="240" height="240" alt="Пример выполненной работы">
+              </a>
             </li>
-            <li class="projects__item" data-link="cutting">
-              <img class="projects__img" src="./images/det6.jpg" width="240" height="240" alt="Пример выполненной работы">
-              <!-- <h3 class="projects__item-title">Название услуги</h3> -->
+            <li class="projects__item">
+              <a class="projects__link" href="#services">
+                <img class="projects__img" src="./images/det6.jpg" width="240" height="240" alt="Пример выполненной работы">
+              </a>
             </li>
-            <li class="projects__item" data-link="cutting">
-              <img class="projects__img" src="./images/det1.jpg" width="240" height="240" alt="Пример выполненной работы">
-              <!-- <h3 class="projects__item-title">Название услуги</h3> -->
+            <li class="projects__item">
+              <a class="projects__link" href="#services">
+                <img class="projects__img" src="./images/det1.jpg" width="240" height="240" alt="Пример выполненной работы">
+              </a>
             </li>
-            <li class="projects__item" data-link="cutting">
-              <img class="projects__img" src="./images/det3.jpg" width="240" height="240" alt="Пример выполненной работы">
-              <!-- <h3 class="projects__item-title">Название услуги</h3> -->
+            <li class="projects__item">
+              <a class="projects__link" href="#services">
+                <img class="projects__img" src="./images/det3.jpg" width="240" height="240" alt="Пример выполненной работы">
+              </a>
             </li>
-            <li class="projects__item" data-link="cutting">
-              <img class="projects__img" src="./images/det4.jpg" width="240" height="240" alt="Пример выполненной работы">
-              <!-- <h3 class="projects__item-title">Название услуги</h3> -->
+            <li class="projects__item">
+              <a class="projects__link" href="#services">
+                <img class="projects__img" src="./images/det4.jpg" width="240" height="240" alt="Пример выполненной работы">
+              </a>
             </li>
-            <li class="projects__item" data-link="cutting">
-              <img class="projects__img" src="./images/det5.jpg" width="240" height="240" alt="Пример выполненной работы">
-              <!-- <h3 class="projects__item-title">Название услуги</h3> -->
+            <li class="projects__item">
+              <a class="projects__link" href="#services">
+                <img class="projects__img" src="./images/det5.jpg" width="240" height="240" alt="Пример выполненной работы">
+              </a>
             </li>
           </ul>
         </div>

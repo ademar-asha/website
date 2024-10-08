@@ -13,7 +13,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   justify-items: center;
-  gap: 30px;
+  gap: 40px 30px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -25,10 +25,7 @@
 
 .projects__item {
   width: 290px;
-  padding: 20px;
-  background-color: $white;
   border-radius: 25px;
-  text-align: center;
   box-shadow: 0 0 12px -5px $dark-bg;
   transition: all 0.2s;
   cursor: pointer;
@@ -48,8 +45,8 @@
 .projects__img {
   display: block;
   margin: 0 auto;
-  width: 240px;
-  height: 240px;
+  width: 290px;
+  height: 290px;
   object-fit: cover;
   border-radius: 25px;
 }
