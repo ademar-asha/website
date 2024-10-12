@@ -22,24 +22,26 @@
   text-transform: uppercase;
 
   @media (max-width: calc($desktop-width - 1px)) {
+    z-index: 20;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background-color: $dark-bg;
     max-height: 0;
-    transition: max-height 0.7s;
+    transition: max-height 0.7s, visibility 0.7s;
     overflow: hidden;
+    visibility: hidden;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
-    display: block;
     max-width: 600px;
   }
 
   &--active {
     max-height: 300px;
+    visibility: visible;
   }
 }
 
