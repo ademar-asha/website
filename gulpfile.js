@@ -29,6 +29,7 @@ const PATHS_TO_STATIC = [
   `${PATH_TO_SOURCE}vendor/**/*`,
   `${PATH_TO_SOURCE}images/**/*`,
   `!${PATH_TO_SOURCE}**/README.md`,
+  `${PATH_TO_SOURCE}CNAME`,
 ];
 let isDevelopment = true;
 
