@@ -30,6 +30,8 @@ const PATHS_TO_STATIC = [
   `${PATH_TO_SOURCE}images/**/*`,
   `!${PATH_TO_SOURCE}**/README.md`,
   `${PATH_TO_SOURCE}CNAME`,
+  `${PATH_TO_SOURCE}robots.txt`,
+  `${PATH_TO_SOURCE}sitemap.xml`,
 ];
 let isDevelopment = true;
 
